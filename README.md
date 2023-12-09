@@ -12,6 +12,7 @@
 - [Project Description](#description)
 - [Mockup](#mockup)
 - [Project Structure](#project-structure)
+- [API](#🌠-api)
 - [Assets & Resources](#resources)
 - [License & Copyright](#license-&-copyright)
 
@@ -102,6 +103,17 @@ Chart created to design the flow of the user journey in the application presente
 
 #### Steps & Challenges Faced
 Upon completing the mockup, I initiated the project by crafting CSS, JS, and HTML files to establish its structural foundation. I incorporated links to import CSS frameworks and commenced work on the navbar. It was a valuable learning as I delved into documentations to learn more about what and how I could implement the components. The most challenging part was determining the application's flow to ensure simplicity and user-friendliness.
+
+
+<a name="api"></a>
+## 🌠 API 
+1. Get API Key by signing-up at https://api.nasa.gov/
+2. The date value needs to be in the following format YYY-MM-DD
+3. When displaying the APOD image either after a APOD search or in the favourites section, the standard url property should be used. When displaying the high definition version of the image, the hdurl property should be used.
+
+The most challenging part was implementing every feature designed with micro interactions, like favorite icons.
+
+
 
 <a name="resources"></a>
 ## 📖 Assets & Resources

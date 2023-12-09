@@ -66,11 +66,11 @@ main {
 }
 
 /* Style search button */
-.search-button {
+.submit-button {
     padding: 15px 45px;
     border-radius: 30px;
 }
-.search-button:hover {
+.submit-button:hover {
     background-color: #CED5F3 !important;
     color: #383838 !important;
 }
@@ -106,9 +106,9 @@ input {
 .card i {
     font-size: 30px;
 }
-.card a:hover {
+.favorites-btn a:hover {
     animation: pulse-animation 0.5s infinite;
-}  
+}
 @keyframes pulse-animation {
     0% {
         transform: scale(0.95);
@@ -121,10 +121,45 @@ input {
     }
 }
 
-#favorites-card #favorites-button {
+/* Style favorites button filled */
+.filled {
     color: #FFC65C !important;
 }
+.hidden {
+    display: none;
+}
 
+/* Cards and tagline spacing */
+.favorites-card {
+    margin-top: -250px;
+}
+
+
+/* Card image adjust */
+.card-image img {
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,.25);
+    height: 350px;
+    width: -webkit-fill-available;
+}
+
+.zoom-btn {
+    margin-top: 15px;
+}
+
+.zoom-btn i {
+    color: #CED5F3;
+    margin-left: -50px;
+}
+
+.modal-dialog {
+    max-width: 100%;
+}
+
+/* Ensure the image is responsive within the modal */
+.modal-body img {
+    width: 100%;
+    max-height: auto;
+}
 
 /* ABOVE TABLET VERSION */
 @media screen and (min-width: 990px) {
@@ -154,15 +189,23 @@ input {
         font-size: 18px;
     }
 
-    /* Favorites card */
-    .favorites-card, .favorites-title {
-        margin-top: 80px;
+    /* Cards and tagline spacing */
+    .tagline-text {
+        margin-top: -200px;
     }
-    .card {
-        height: 420px;
+    .favorites-card {
+        margin-top: -200px;
+    }
+    .favorites-title {
+        margin-top: 80px;
     }
     .visual-circle {
         right: 130px;
+    }
+
+    /* Card adjust */
+    .card-image img {
+        width: 60% !important;
     }
 }
 
@@ -178,5 +221,40 @@ input {
 
     p, button {
         font-size: 24px;
+    }
+
+    .img-circle-light {
+        background-image: url('/assets/visual-circle-light.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .img-circle-dark {
+        background-image: url('/assets/visual-circle-dark.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* Cards and tagline spacing */
+    .home-tagline-lg {
+        margin-top: -300px;
+    }
+    .favorites-tagline-lg {
+        margin-top: -500px;
+    }
+    .favorites-card {
+        margin-top: -550px;
+    }
+    .home-card {
+        margin-top: -380px;
+    }
+    .insert-text {
+        margin-top: -250px;
+    }
+    .card-image img {
+        width: 600px !important;
+    }
+    .card-text {
+        padding-right: 60px;
     }
 }
