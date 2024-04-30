@@ -1,0 +1,260 @@
+/*
+    Define global colors
+    $primary: #FFC65C;
+    $secondary: #332B4F;
+    $tertiary: #CED5F3;
+    $dark: #383838;
+    $light: #E8E9EB;
+*/
+
+/* Define font */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+p, button {
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+
+/* Fit content vertically in the screen */
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 90vh;
+}
+
+/* Define background colors */
+.bg-dark {
+    background-color: #383838 !important;
+}
+.bg-dark-purple {
+    background-color: #332B4F !important;
+}
+.bg-light {
+    background-color: #E8E9EB !important;
+}
+
+/* Define text colors */
+.text-light {
+    color: #E8E9EB;
+}
+.text-dark {
+    color: #383838;
+}
+
+/* Define header layout and style*/
+.nav {
+    border: none;
+    border: 1px solid #1a1a1a !important;
+}
+.nav-link {
+    color: #E8E9EBCC !important;
+    border: none !important;
+    border-bottom: 2px solid #E8E9EBCC !important;
+}
+.nav-item {
+    flex: 1 1 auto;
+}
+.nav-item button {
+    padding: 16px 0;
+    width: 100%;
+}
+.nav-item .active {
+    color: #FFC65C !important;
+    border-bottom: 2px solid #FFC65CCC !important;
+}
+
+/* Style search button */
+.submit-button {
+    padding: 15px 45px;
+    border-radius: 30px;
+}
+.submit-button:hover {
+    background-color: #CED5F3 !important;
+    color: #383838 !important;
+}
+
+/* Fit info content vertically */
+.info-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 60vh;
+    justify-content: space-evenly;
+}
+
+/* Style date picker */
+input {
+    background-color: #E8E9EB80 !important;
+    border-color: #383838 !important;
+    border-radius: 15px !important;
+    font-size: 20px !important;
+}
+
+/* Style separator */
+.separator {
+    color: #CED5F3;
+    font-size: 80px;
+}
+
+/* Style cards */
+.card {
+    background-color: #E8E9EB;
+    border-radius: 15px;
+}
+.card i {
+    font-size: 30px;
+}
+.favorites-btn a:hover {
+    animation: pulse-animation 0.5s infinite;
+}
+@keyframes pulse-animation {
+    0% {
+        transform: scale(0.95);
+    }
+    70% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.95);
+    }
+}
+
+/* Style favorites button filled */
+.filled {
+    color: #FFC65C !important;
+}
+.hidden {
+    display: none;
+}
+
+/* Cards and tagline spacing */
+.favorites-card {
+    margin-top: -250px;
+}
+
+
+/* Card image adjust */
+.card-image img {
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,.25);
+    height: 350px;
+    width: -webkit-fill-available;
+}
+
+.zoom-btn {
+    margin-top: 15px;
+}
+
+.zoom-btn i {
+    color: #CED5F3;
+    margin-left: -50px;
+}
+
+.modal-dialog {
+    max-width: 100%;
+}
+
+/* Ensure the image is responsive within the modal */
+.modal-body img {
+    width: 100%;
+    max-height: auto;
+}
+
+/* ABOVE TABLET VERSION */
+@media screen and (min-width: 990px) {
+
+    /* Define header layout */
+    header {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav,
+    .nav-link,
+    .nav-item .active,
+    .nav-link:hover {
+        border: none !important;
+    }
+    
+    .nav-link:hover {
+        color: #FFC65C !important;
+    }
+
+    .nav i {
+        font-size: medium;
+    }
+    
+    p, button {
+        font-size: 18px;
+    }
+
+    /* Cards and tagline spacing */
+    .tagline-text {
+        margin-top: -200px;
+    }
+    .favorites-card {
+        margin-top: -200px;
+    }
+    .favorites-title {
+        margin-top: 80px;
+    }
+    .visual-circle {
+        right: 130px;
+    }
+
+    /* Card adjust */
+    .card-image img {
+        width: 60% !important;
+    }
+}
+
+/* ONLY DESKTOP VERSION */
+@media screen and (min-width: 1200px) {
+
+    /* Change image size */
+    .visual-circle {
+        width: 811.09px;
+        height: 779.43px;
+        float: inline-end;
+    }
+
+    p, button {
+        font-size: 24px;
+    }
+
+    .img-circle-light {
+        background-image: url('/assets/visual-circle-light.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .img-circle-dark {
+        background-image: url('/assets/visual-circle-dark.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* Cards and tagline spacing */
+    .home-tagline-lg {
+        margin-top: -300px;
+    }
+    .favorites-tagline-lg {
+        margin-top: -500px;
+    }
+    .favorites-card {
+        margin-top: -550px;
+    }
+    .home-card {
+        margin-top: -380px;
+    }
+    .insert-text {
+        margin-top: -250px;
+    }
+    .card-image img {
+        width: 600px !important;
+    }
+    .card-text {
+        padding-right: 60px;
+    }
+}
